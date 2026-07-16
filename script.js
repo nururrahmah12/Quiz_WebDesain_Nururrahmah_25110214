@@ -1,4 +1,3 @@
-
 function aman(namaKomponen, fn) {
     try {
         fn();
@@ -29,7 +28,7 @@ document.querySelectorAll('.nav-link-page').forEach (function (link) {
 //scroll ke atas setiap pindah halaman
 window.scrollTo({ top: 0, behavior: 'instant'});
 
-$('#navbarLinks').collaps('hide');
+$('#navbarLinks'). collapse('hide');
 
 if (namaHalaman === 'akademik') {
     setTimeout(function () {
