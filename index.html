@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: var(--navy);"> 
+        <a class="navbar-brand font-weight-bold" href="#" data-page="home">
+            Politeknik Cakra Nusantara
+        </a>
+        <button class="navbar-toggler collapsed" type="button"
+            data-toggle="collapse" data-target="#navbarLinks"
+            aria-controls="navbarLinks" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarLinks" style="">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                   <a class="nav-link active nav-link-page text-white" href="#" data-page="home">Home</a> 
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link nav-link-page text-white-50" href="#" data-page="akademik">Akademik</a> 
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link nav-link-page text-white-50" href="#" data-page="dosen">Dosen</a> 
+                </li>
+                <li class="nav-item ml-lg-2">
+                   <a class="nav-link btn btn-warning btn-sm text-dark font-weight-bold px-3" href="#" data-page="kontak">Kontak</a> 
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-home" class="page-view active" style="padding-top: 56px;">
+        <section class="hero-section text-white text-center">
+            <div class="container">
+                <span class="badge badge-warning text-dark mb-3 px-3 py-2" style="font-size: 12;letter-spacing: .05em;">
+                    Politeknik Cakra Nusantara
+                </span>
+                <h1 class="display-4 font-weight-bold mb-3">
+                    Membentuk tenaga Profesional<br>Manajeman Informatika
+                </h1>
+                 <p class="lead text-white-50 mb-4">
+                    Program vokasi D3 yang memadukan keterampilan web, basis data,<br>sistem informasi untuk kebutuhan industri masa kini</p>
+                <button class="btn btn-warning teext-dark font-weight-bold px-4 mr-2" data-page="akademik">
+                    Lihat Program Studi
+                </button>
+                <button class="btn btn-outline-light px-4" data-page="kontak">
+                    Hubungi Kami
+                </button>
+            </div>
+        </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+         <p class="text-uppercase font-weight-bold small mb-1" style="color: var(--navy);letter-spacing: .06;">Informasi Terbaru</p>
+         <h2 class="font-weight-bold mb-4" style="color: var(--navy);">Berita & Pengumuman</h2>
+            <div id="carouselBerita" data-ride="carousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselBerita" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselBerita" data-slide-to="1"></li>
+                    <li data-target="#carouselBerita" data-slide-to="2"></li>
+
+                </ol>
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <div class="slide-placeholder" style="background: linear-gradient(120deg, #a0e1b5, #c1f611);">
+                            <span class="badge badge-light mb-2">Akademik</span>
+                            <h4 class="font-weight-bold ">Pendaftaran KRS Semester Ganjil 2026</h4>
+                            <p class="mb-0 text-white-50">Selamat Kepada 142 lulusan baru, semoga sukses di dunia kerja</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide-placeholder" style="background: linear-gradient(120deg, #b691e2, #7629e9);">
+                            <span class="badge badge-light mb-2">Wisuda</span>
+                            <h4 class="font-weight-bold ">Wisuda Periode II Tahun 2026</h4>
+                            <p class="mb-0 text-white-50">Mahasiswa Aktif dapat mengisi KRS mulai 1 juli 2026 via portal Akademik</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide-placeholder" style="background: linear-gradient(120deg, #de8ea5, #d00a4f);">
+                            <span class="badge badge-light mb-2">Prestasi</span>
+                            <h4 class="font-weight-bold ">Juara 1 lomba Web Desain Tingkat Provinsi</h4>
+                            <p class="mb-0 text-white-50">Tim Mahasiswa D3 manajeman informatika raih penghargaan tinggi</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselBerita" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next"href="#carouselBerita" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    </div>
+    <div id="page-akademik" class="page-view active" style="padding-top: 56px;">
+        <div class="text-white py-4" style="background-color: var(--navy);">
+            <div class="container">
+                <span class="badge badge-warning text-dark mb-2">Program Studi</span>
+                <h1 class="h3 font-weight-bold mb-1">D3 Manajeman Informatika</h1>
+                <p class="mb-0 text-white-50">Informasi lengkap seputar profil, kurikulum, dan mata kuliah.</p>
+            </div>
+        </div>
+    </div>
+    <div id="page-dosen" class="page-view " style="padding-top: 56px;">
+        <div class="text-white py-4" style="background-color: var(--navy);">
+            <div class="container">
+                <span class="badge badge-warning text-dark mb-2">Tenaga Pengajar</span>
+                <h1 class="h3 font-weight-bold mb-1">Dosen Program Studi</h1>
+                <p class="mb-0 text-white-50">Tim pengajar berpengalaman di bidang akademik dan industri TI</p>
+            </div>
+        </div>
+    </div>
+    <div id="page-kontak" class="page-view " style="padding-top: 56px;">
+         <div class="text-white py-4" style="background-color: var(--navy);">
+            <div class="container">
+                <span class="badge badge-warning text-dark mb-2">Hubungi Kami</span>
+                <h1 class="h3 font-weight-bold mb-1">Kontak Kampus</h1>
+                <p class="mb-0 text-white-50">Sampaikan pertanyaan atau masukkan anda melalui formulir di bawah ini</p>
+            </div>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

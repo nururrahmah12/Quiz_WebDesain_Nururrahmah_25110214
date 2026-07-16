@@ -1,0 +1,36 @@
+:root {
+    --navy : #b552d3;
+    --gold : #f2a93b;
+}
+
+.navbar-brand-icon { color: var(--gold);}
+
+.nav-link-page { position: relative;}
+.nav-link-page::after{
+    content: '';
+    position: absolute; left:8px;
+    right: 8px; bottom: 0;
+    height: 2px; background: var(--gold);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform .25s ease;
+}
+.nav-link-page.active::after {transform: scaleX(1);}
+.nav-link-page:hover::after  {transform: scaleX(1);}
+
+.hero-section{
+    background: linear-gradient(135deg, var(--navy)0%, #1e3f6e 100%);
+    padding: 100px 0 70px;
+}
+.page-view {display: none;}
+.page-view.active {display: block; animation: fadedup .3s ease;}
+
+@keyframes fadedup {
+    from {opacity: 0; transform: translateY(10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+.slide-placeholder {
+    height: 260px;
+    display: flex; flex-direction: column;
+    justify-content: center; padding: 0 60px; color: #fff;
+
+}
